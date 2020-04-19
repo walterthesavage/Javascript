@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="base_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+	<div class="topnav" id="myTopnav">
+  <a href="task_1_inputs.html" >Task 1</a>
+  <a href="task_2_inputs.html" >Task 2</a>
+  <a href="task_3_inputs.html" class="active">Task 3</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	
+<div>
+	
+	<h1>Email and Date Selectors</h1>
+		<form autocomplete="on">
+			<label>Email Address:</label><input type="email" id="userEmail" placeholder="johndoe@gmail.com" required title="Please enter your email address "><br>
+			<label>Pick up Date:</label><input type="date" id="dateInput" required title="Please emter a date "><br>
+			
+			<label>This a text area input box:</label><textarea placeholder="Describe yourself here..." maxlength="200" title="This is a place for you to type"></textarea><br>
+			
+			<button class="submitButton" onclick="checkInputs()" type="button">Check Inputs</button>	
+		</form>
+	
+</div>
+	
+		<footer>
+		<p>Site Developed and maintained by Walter Savage</p>
+		<a href="task_1_inputs.html">Task 1</a> | <a href="task_2_inputs.html">Task 2</a> | <a href="task_3_inputs.html">Task 3</a>
+	</footer>
+	
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	
+	<script src="task_3_inputs.js"></script>
+</body>
+</html>

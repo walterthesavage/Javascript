@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Task 9</title>
+<link href="base_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div>
+        <h1>Inline Validation</h1>
+        <p>To gain Merit, your program must have boundaries e.g valid age.</p>
+        <p>To gain Excellence, your program must handle invalid data.</p>
+
+        <label>First Name:<input autocomplete="given-name" id="firstNameInput" pattern="[A-Za-z'-]{2,11}" placeholder="John" required="" title="Please enter in your first name" type="text"></label>
+        <div id="errorMessage1" class="errorMessages"></div>
+
+        <label>Last Name:<input autocomplete="family-name" id="lastNameInput" pattern="[A-Za-z'-]{2,11}" placeholder="Smith" required="" title="Please enter in your last name" type="text"></label>
+        <div id="errorMessage2" class="errorMessages"></div>
+
+        <label>Age:<input id="ageInput" max="130" min="1" required="" type="number"></label>
+        <div id="errorMessage3" class="errorMessages"></div>
+    
+        <button class="submitButton" id="submitButton" onClick="checkForm()">Check Data</button>
+        <h1>Checked Data</h1>
+
+        <div id="nameOutput"></div>
+        <div id="ageOutput"></div>
+
+    </div>
+
+    <script src="task_9.js"></script>  
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <link href="sams_sandwich_accordian.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Sam's Sandwich Shop</h1>
+    <p></p>
+    <h2>Place your order here</h2>
+    <form name="order">
+        <h3>Sandwich</h3>
+        <label><input type="radio" name="bread_length" value="6inch">6 Inch</label>
+        <label><input type="radio" name="bread_length" value="12inch">12 Inch</label>
+
+        <h3>Bread</h3>
+        <label><input type="radio" name="bread_type" value="White">White</label>
+        <label><input type="radio" name="bread_type" value="Wholegrain">Wholegrain</label>
+        <label><input type="radio" name="bread_type" value="Italian">Italian</label>
+        <label><input type="radio" name="bread_type" value="Rye">Rye</label>
+        <label><input type="radio" name="bread_type" value="Wrap">Wrap</label>
+
+        <h3>Cheese</h3>
+        <label><input type="radio" name="cheese" value="Swiss">Swiss</label>
+        <label><input type="radio" name="cheese" value="Cheddar">Cheddar</label>
+        <label><input type="radio" name="cheese" value="Feta">Feta</label>
+        <label><input type="radio" name="cheese" value="No Cheese">No Cheese</label>
+
+        <h3>Meat</h3>
+        <label><input type="radio" name="meat" value="Ham">Ham</label>
+        <label><input type="radio" name="meat" value="Tuna">Tuna</label>
+        <label><input type="radio" name="meat" value="Turkey">Turkey</label>
+        <label><input type="radio" name="meat" value="Salami">Salami</label>
+        <label><input type="radio" name="meat" value="Meatball">Meatball</label>
+        <label><input type="radio" name="meat" value="Chicken">Chicken</label>
+
+        <h3>Salads</h3>
+        <label><input type="checkbox" name="salads" value="Lettuce">Lettuce</label>
+        <label><input type="checkbox" name="salads" value="Tomatoes">Tomatoes</label>
+        <label><input type="checkbox" name="salads" value="Carrot">Carrot</label>
+        <label><input type="checkbox" name="salads" value="Cucumber">Cucumber</label>
+        <label><input type="checkbox" name="salads" value="Capsicum">Capsicum</label>
+
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <h2>Order Summary</h2>
+    <div id="radioResults"></div>
+
+    <h2>Your details</h2>
+    <label>Your Name: </label><input type="text" id="name" placeholder="Please type your name" pattern="[a-zA-Z]\w{1,39}"><br>
+    <label>Your Cellphone number:</label><input id="cellphone" type="tel" placeholder="Please enter your cellphone number" pattern="02[0-9]\d{6,8}">
+    <input type="button" id="sumbmit_button" value="submit" onClick="loopForm(document.order)">
+    <script src="sams_sandwich_v1.js"></script>
+</body>

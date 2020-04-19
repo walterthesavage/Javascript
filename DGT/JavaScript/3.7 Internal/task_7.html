@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Task 7</title>
+<link href="base_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div>
+        <h1>Using a for loop for multiple checkboxes</h1>
+        <h2>Breakfast Menu</h2>
+        <input class="addCheck" data-price="12.50" type="checkbox" value="Hot Cakes"><label>Hot Cakes</label><br>
+        <input class="addCheck" data-price="14.99" type="checkbox" value="Eggs Benedict"><label>Eggs Benedict</label><br>
+        <input class="addCheck" data-price="8.99" type="checkbox" value="BLT Bagel"><label>BLT bagel</label><br>
+
+        <h2>Beverages</h2>
+        <input class="addCheck" data-price="4.50" type="checkbox" value="Flat White"><label>Flat White</label><br>
+        <input class="addCheck" data-price="4.99" type="checkbox" value="Latte"><label>Latte</label><br>
+        <input class="addCheck" data-price="4.00" type="checkbox" value="Hot Chocolate"><label>Hot Chocolate</label><br>
+
+        <h2>Extras</h2>
+        <input class="addCheck" data-price="4.00" type="checkbox" value="Hashbrown"><label>Hashbrown</label><br>
+        <input class="addCheck" data-price="4.00" type="checkbox" value="Eggs"><label>Eggs</label><br>
+        <input class="addCheck" data-price="4.00" type="checkbox" value="Bacon"><label>Bacon</label>
+
+        <h2>Order Summary:</h2>
+        <div id="outputDIV"></div>
+        <button class="submitButton" id="submit" onClick="checkForm()">Calculate Cost</button>
+    </div>
+
+<script src="task_7.js"></script>
+
+</body>
+
+</html>

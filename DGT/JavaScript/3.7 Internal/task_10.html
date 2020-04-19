@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Task 10</title>
+<link href="base_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div>
+    <h1>NZ Restricted Licence Eligibility</h1>
+
+    <h2>Are you at least 16 1/2 years old?</h2>
+    <div id="q1" class="input">
+    <label><input id="ageY" class="option-input" name="age" type="radio">Yes:</label>
+    <label><input id="ageN" class="option-input" name="age" type="radio">No:</label>
+    </div>
+    <div id="q2" class="input">
+    <h2>Have you held your learner licence for at least 6 months?</h2>
+    <label><input id="timeY" class="option-input" name="time" type="radio" onClick="updateButton()">Yes:</label>
+    <label><input id="timeN" class="option-input" name="time" type="radio" onClick="updateButton()"">No:</label>
+    </div>
+
+<button id="checkButton2" class="submitButton" onClick="checkElegibility()">Get Elegibility</button>
+
+    <div id="outDiv">
+        
+    </div>
+
+</div>
+<script src="task_10.js"></script>
+</body>
+
+
+
+</html>

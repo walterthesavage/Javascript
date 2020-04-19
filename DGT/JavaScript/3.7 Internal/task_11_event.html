@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 11</title>
+    <link href="base_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div>
+        <h1>Calorie Calculator</h1><label>Enter your weight (lb):</label> <input id="weightInput" max="1400" min="0" type="number" value="120"><br>
+
+        <p>Choose a type of exercise:<br>
+            <!-- creating buttons and applying class to the CSS to them, use data attribute to assign values e.g calories -->
+        <button class="exercise-tile blue-button" data-calories="1.81">Yoga</button>
+            <button class="exercise-tile blue-button" data-calories="2.72">Weights</button>
+            <button class="exercise-tile blue-button" data-calories="3.63">Running</button>
+            <button class="exercise-tile blue-button" data-calories="3.63">Basketball</button>
+            <button class="exercise-tile blue-button" data-calories="3.86">Cycling</button>
+            <button class="exercise-tile blue-button" data-calories="3.86">Rowing</button>
+            <button class="exercise-tile blue-button" data-calories="4.09">Boxing</button>
+            <button class="exercise-tile blue-button" data-calories="4.54">Football</button>
+            <button class="exercise-tile blue-button" data-calories="4.54">Rugby</button></p>
+
+        <h1>Calorie Output</h1>
+            <div id="outputBurn"></div>            
+    </div>
+    <script src="task_11_event.js"></script>
+
+</body>
+
+</html>

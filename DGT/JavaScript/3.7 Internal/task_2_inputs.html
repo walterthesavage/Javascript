@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>task_2_inputs</title>
+<link href="base_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+	<div class="topnav" id="myTopnav">
+  <a href="task_1_inputs.html" >Task 1</a>
+  <a href="task_2_inputs.html" class="active">Task 2</a>
+  <a href="task_3_inputs.html">Task 3</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	
+	<div>
+	<h1>Number Inputs</h1>
+		<br>
+		<label>Age:<input id="age_input" type="number" min="1" max="130" value="18"></label>
+		<label>Cellphone:<input id="cellphoneInput" type="tel" minlength="10" maxlength="11" pattern="[0-9]" autocomplete="on" placeholder="0273873485" title="Enter your cellphone number" required></label>
+		<button id="checkAge" onClick="checkAge()" class="submitButton">Check Age</button>
+		<div id="error_message"></div>
+		<div id="output_cellphone"></div>
+	</div>
+	
+		<footer>
+		<p>Site Developed and maintained by Walter Savage</p>
+		<a href="task_1_inputs.html">Task 1</a> | <a href="task_2_inputs.html">Task 2</a> | <a href="task_3_inputs.html">Task 3</a>
+	</footer>
+	
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	
+	<script src= "task_2_inputs.js"></script>
+</body>
+</html>

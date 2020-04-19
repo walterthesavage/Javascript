@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice Firebase Task 1</title>
+        <link rel = "stylesheet" type = "text/css" href = "add_users_modal.css" />
+    </head>
+    <body>
+        <div>
+        <h1>Firebase Task 1- Adding User names / Emails</h1>
+        <label>Enter your username: <input id="userNameInput" placeholder="johns.20193" type="text"></label>
+        <label>Enter your email address: <input id="userEmailInput" placeholder="student@obhs.school.nz" type="email"></label><br>
+        <br>
+        <button onClick="checkInputs()" id="submitButton">Push Data to Firebase</button>    
+    </div>
+
+        <!-- Overlay displayed when the data has been pushed to the firebase -->
+        <div id="confirmOverlay">
+          <p>Your data has been pushd to Firebase</p>
+          <a href="javascript:void(0)" onClick=" document.getElementById('confirmOverlay').style.height='0'">&times;</a>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC7G04OuB79x0BNZkjSsGBj3KdCOKBOlnM",
+            authDomain: "user-names-ffee6.firebaseapp.com",
+            databaseURL: "https://user-names-ffee6.firebaseio.com",
+            projectId: "user-names-ffee6",
+            storageBucket: "user-names-ffee6.appspot.com",
+            messagingSenderId: "849488150463",
+            appId: "1:849488150463:web:26c895415562a9457a6b0a",
+            measurementId: "G-H8GC18C9BT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+
+                <script src="add_users.js"></script>
+    </body>
+</html>
