@@ -8,6 +8,15 @@
 body {
   background-color: #f1f1f1;
 }
+.concert_select {
+	display: block;
+	height: 25px;
+	border-radius: 2px;
+	border-color: #4CAF50;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 700;
+}
 
 #regForm {
   background-color: #ffffff;
@@ -48,6 +57,7 @@ button {
   font-size: 17px;
   font-family: Raleway;
   cursor: pointer;
+	border-radius: 4px;
 }
 
 button:hover {

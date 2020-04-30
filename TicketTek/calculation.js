@@ -21,6 +21,7 @@ function setBooking(){
 }
 
 function validate(){
+	alert("validating");
 	var contact = document.getElementsByClassName("contact_info");
 	var check = 0;
 	for (var i = 0; 1 < contact.length; i++){
