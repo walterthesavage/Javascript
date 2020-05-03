@@ -1,8 +1,6 @@
 // JavaScript 
 alert("JS attached")
-var total_cost, concert, ticket_amount, ticket_price;
-var database = firebase.database();
-var ticketsRef = database.ref('tickets');
+var total_cost, concert, ticket_amount;
 
 function setBooking(){
 	ticket_amount = document.getElementById("ticket_quantity").value;
@@ -13,7 +11,7 @@ function setBooking(){
 		document.getElementById("5A").innerHTML = "";
 		concert = document.getElementById("concert_select").value;
 		var seat_type = document.getElementsByClassName("seat_type");
-		ticket_price = this.dataset.price;
+		var ticket_price = this.dataset.price;
 		total_cost = Number(ticket_amount * ticket_price + BOOKING_FEE);
 		document.getElementById("tickets").innerHTML = ticket_amount;
 		document.getElementById("concert").innerHTML = concert;
@@ -46,19 +44,7 @@ function validate(){
 
 function pushData() {
 	alert("in push data function");
-	var data = {
-		concert: concert,
-		totalCost: total_cost,
-		quantity: ticket_amount,
-		pricePerTicket: ticket_price
-	}
-	alert("data should now be updated!")
-	ticketsRef.push(data);
-	setTimeout(function(){
-		location.reload
-	},3000);
 }
-
 var seat = document.getElementsByClassName("seat_type");
 for (var i = 0; i < seat.length; i++) {
 	seat[i].addEventListener('click',setBooking);

@@ -44,7 +44,7 @@
 	  <label>Last Name: <input id="last_name" placeholder="Last Name e.g Doe" type="text" data-error="Please enter only letters" data-number="2" class="contact_info" pattern="[A-Za-z]{2-20}"><output id="2A"></output></label><br>
 	  <label>Email Address: <input id="email_address" placeholder="Email Address e.g johndoe@mail.com" type="email" data-error="Please enter a valid email" data-number="3" class="contact_info" pattern="[a-z0-9.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><output id="3A"></output></label><br>
 	  <label>Cellphone: <input id="phone_number" placeholder="Cellphone Number e.g. 0273873485" type="tel" data-error="Please enter only numbers" data-number="4" class="contact_info" pattern="[0-9]{8,12}"><output id="4A"></output></label><br><br>
-	  <button id="confirmbooking" onclick="validate()">Confirm Booking</button>
+	  <button id="confirmbooking" onclick="pushData()">Confirm Booking</button>
 	  <br>
   </div>
 		
@@ -64,27 +64,24 @@
 </form>
 	
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebasess.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
 
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyBV_shwOSl6bSPcjY0hYU9TN1sRIKwe5uE",
-    authDomain: "ticketek-d7d92.firebaseapp.com",
-    databaseURL: "https://ticketek-d7d92.firebaseio.com",
-    projectId: "ticketek-d7d92",
-    storageBucket: "ticketek-d7d92.appspot.com",
-    messagingSenderId: "548892179719",
-    appId: "1:548892179719:web:f91d96899208c7b4d899a2",
-    measurementId: "G-FWHXF6LNYM"
+    apiKey: "AIzaSyDrDcGQi8Mnm4WfD0ArxBWFEbNrY0sAcbo",
+    authDomain: "ticketek-bd5ed.firebaseapp.com",
+    databaseURL: "https://ticketek-bd5ed.firebaseio.com",
+    projectId: "ticketek-bd5ed",
+    storageBucket: "ticketek-bd5ed.appspot.com",
+    messagingSenderId: "1073766926986",
+    appId: "1:1073766926986:web:9c8c092707fc1617817b73"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 </script>
 	
 	<script src="stepbystep.js"></script>
